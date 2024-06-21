@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estoico Práctico</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="conteiner">
+        <h1>Estoico Práctico</h1>
+
+        <div id="addPractice">
+            <h2>Añadir práctica:</h2>
+            <label for="practiceName">Nombre:</label>
+            <input type="text" id="practiceName">
+            <label for="practiceDescription">Descripción:</label>
+            <input type="text" id="practiceDescription">
+            <button onclick="addPractice()">Añadir práctica</button>
+        </div>
+        <div id="randomPractice">
+            <h2>Práctica aleatoria:</h2>
+            <button onclick="selectRandom()">Seleccionar práctica aleatoria</button>
+        </div>
+        <div id="listPractices">
+            <h2>Listar prácticas:</h2>
+            <ul id="practiceList"></ul>
+        </div>
+        <div id="deletePractice">
+            <h2>Eliminar práctica:</h2>
+            <label for="deleteIndex">Número de práctica:</label>
+            <input type="number" id="deleteIndex">
+            <button onclick="deletePractice()">Eliminar práctica</button>
+        </div>
+    
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
